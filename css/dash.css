@@ -30,7 +30,6 @@
 .list{
     width: 98%;
     height:50px;
-    border: solid;
     margin-bottom: 10px;
     display: flex;
 }
