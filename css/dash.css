@@ -19,6 +19,18 @@
     width: 42%;
     height: 45px;
 }
+#logo1{
+    width: 70px;
+    height: 45px;
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 5%;
+}
+#logo1 img{
+    width: 100%;
+    height: 100%;
+}
 #logo img{
     width: 85%;
     height: 85%;
@@ -34,6 +46,7 @@
     height:50px;
     margin-bottom: 10px;
     display: flex;
+    cursor: pointer;
 }
 #icon{
     width: 20%;
@@ -55,6 +68,48 @@
     padding-right: 30px;
     padding-top: 95px;
    background-color: #f5f5fc;
+}
+#ini{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8%;
+    left: 110px;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+}
+#ini img{
+    width: 100%;
+    height: 100%;
+}
+#btn{
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    left:150px;
+    display: none;
+    background-color: blue;
+    color: white;outline: none;border: none;border-radius: 5px;
+}
+#main ul{
+    width: 80%;
+    display: none;
+}
+#main ul li{
+    height: 30px;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+#main ul li:hover{
+    background-color: black;
 }
 #banner{
     width: 100%;
@@ -86,6 +141,12 @@
     width: 100%;
     height: 260px;
     margin-top: 10px;
+}
+.card:hover{
+    background-color: rgb(88, 88, 209);
+}
+.card2:hover{
+    background-color: rgb(88, 88, 209);
 }
 #row{
     display: flex;
@@ -121,6 +182,7 @@
     height: 30px;
     margin-top: 45px;
     margin-left: 90px;
+    cursor: pointer;
 }
 #mainicon img{
     width: 100%;
@@ -155,7 +217,10 @@
     height: 45px;
     margin-left: 15px;
     border-radius: 100%;
-    border: solid 1px;
+}
+#pic img{
+    width: 100%;
+    height: 100%;
 }
 #rec{
     width: 80%;
@@ -186,4 +251,64 @@ hr{
     margin-left: 20px;
     font-weight: lighter;
 }
-@media(max-width:)
+@media(max-width:1150px){
+    #leftbar{
+        display: none;
+    }
+    #main{
+        width: 74%;
+    }
+    #ini{
+        display: block;
+    }
+    #logo1{
+        display: block;
+    }
+}
+@media(max-width:980px){
+    #rightbar{
+        display: none;
+    }
+    #btn{
+        display: block;
+    }
+    .img{
+        right:20%
+    }
+    #logo1{
+        display: block;
+    }
+    #main{
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media(max-width:660px){
+    .img{
+        display: none;
+    }
+    #logo1{
+        display: block;
+    }
+}
+@media(max-width:585px){
+    #row{
+        display: block;
+    }
+    .card{
+        width: 90%;
+    }
+    .card2{
+        width: 90%;
+    }
+    #main{
+        height: 690px;
+    }
+    #logo1{
+        display: block;
+    }
+    /* #main ul{
+        display: block;
+    } */
+}
