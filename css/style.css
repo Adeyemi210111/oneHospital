@@ -1,14 +1,14 @@
 *{
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
 #maincontainer{
     width: 100%;
-    height: 842px;
+    height: 826px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 #navbar{
@@ -150,9 +150,70 @@ color: #FFFCFC;
     width: 500px;
 height: 500px;
 margin-top: 50px;
-margin-right: 200px;
+margin-right: 15%;
 }
 
 #right img{
     width: 100%;
+}
+
+#security{
+    width: 100%;
+height: 284px;
+overflow: hidden;
+background: rgba(77, 164, 69, 0.13);
+}
+
+#img{
+    width: 7%;
+    height: 50px;
+    float: left;
+    background-color: aqua;
+    margin-left: 17.13%;
+margin-top: 100px;
+margin-bottom: 69.28%;
+}
+
+#text{
+    float: left;
+    width: 32%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+#text h1{
+    width: 474px;
+height: 47px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 47px;
+/* identical to box height */
+
+/* text-align: center; */
+
+color: #6C63FF;
+}
+
+#text p{
+    width: 100%;
+height: 96px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+
+
+color: #161433;
+}
+
+#grey{
+    width: 100%;
+    background-color: lightgrey;
+    height: 30px;
 }
