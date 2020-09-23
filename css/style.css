@@ -211,3 +211,9 @@ line-height: 32px;
 
 color: #161433;
 }
+
+#grey{
+    width: 100%;
+    background-color: lightgrey;
+    height: 30px;
+}
