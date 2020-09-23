@@ -5,36 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/dash.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="contain">
         <div id="leftbar">
-            <div id="logo"><img src="" alt=""></div>
+            <div id="logo"><img src="images/OneHosp 03 2.png" alt=""></div>
             <div id="menu">
                 <div class="list">
-                    <div id="icon"></div>
-                    <p>Dashboard</p>
+                    <div id="icon"><img src="images/dashicon.svg" alt=""></div>
+                    <p id="p-dash" style="color: black;">Dashboard</p>
                 </div>
                 <div class="list">
-                    <div id="icon"></div>
+                    <div id="icon"><img src="images/appbl.png" alt=""></div>
                     <p>Appointment</p>
                 </div>
                 <div class="list">
-                    <div id="icon"></div>
+                    <div id="icon"><img src="images/recbl.png" alt=""></div>
                     <p>Records</p>
                 </div>
                 <div class="list">
-                    <div id="icon"></div>
+                    <div id="icon"><img src="images/counbl.png" alt=""></div>
                     <p>Counselling</p>
                 </div>
                 <div class="list">
-                    <div id="icon"></div>
+                    <div id="icon"><img src="images/emer.png" alt=""></div>
                     <p>Emergency</p>
                 </div>
             </div>
         </div>
-        <div id="main"></div>
-        <div id="rightbar"></div>
+        <div id="main">
+            <div id="logo1"><img src="images/OneHosp 03 2.png" alt=""></div>
+            <div id="ini"><img src="images/menu icon.svg" alt=""></div>
+            <button id="btn">Profile</button>
+            <div id="men">
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Appointment</li>
+                    <li>Recods</li>
+                    <li>Counselling</li>
+                    <li>Emergency</li>
+                </ul>
+            </div>
+              <div id="banner">
+                <div class="text">
+                    <p style="font-size: 18px;">Welcome Adeyemi</p>
+                    <p style="font-size: 14px;">lets pick up from where you left off</p>
+                </div>
+                <div class="img"><img src="images/banner.png" alt=""></div>
+            </div>
+            <p id="words">So far, You have:</p>
+            <div id="cardwrap">
+                <div id="row">
+                    <div class="card">
+                        <p>40 <br>Booked Appointments</p>
+                        <div id="mainicon"><img src="images/appcl.png" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <p>25 <br>Counselling Sessions</p>
+                        <div id="mainicon"><img src="images/councl.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <p>56 <br>Documents Available</p>
+                    <div id="mainicon"><img src="images/reccl.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="rightbar">
+            <div id="iconbar">
+                <div class="icons"><img src="images/search.png" alt=""></div>
+                <div class="icons"><img src="images/bell.png" alt=""></div>
+                <div class="icons"><img src="images/notification.png" alt=""></div>
+                <div id="wr">
+                    <P style="margin-top: 15px;">Adeyemi</P>
+                    <div id="pic"><img src="images/48687.png" alt=""></div>
+                </div>    
+            </div>
+            <div id="rec">
+                <div id="upper">
+                    <h5>News Feeds</h5>
+                    <p class="one">Dr. Adeola S.</p>
+                    <P class="two">Eat alot of fruits. Cut down on carbs.Get enough rest.</P><br><br>
+                    <p class="one">Dr. Emeka B.</p>
+                    <P class="two">Stay away from seafood</P>
+                </div>
+                <hr>
+                <div id="lower">
+                    <h5>Appointments</h5>
+                    <p>June 5, 2020</p>
+                    <p>General Hospital, Ikorodu</p>
+                    <p>9:00 AM</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="dash.js"></script>
 </body>
 </html>
