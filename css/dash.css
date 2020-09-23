@@ -142,12 +142,6 @@
     height: 260px;
     margin-top: 10px;
 }
-.card:hover{
-    background-color: rgb(88, 88, 209);
-}
-.card2:hover{
-    background-color: rgb(88, 88, 209);
-}
 #row{
     display: flex;
 }
@@ -204,6 +198,7 @@
     height: 25px;
     margin-right:25px ;
     margin-top: 15px;
+    cursor: pointer;
 }
 .icons img{
     width: 76%;
@@ -217,6 +212,7 @@
     height: 45px;
     margin-left: 15px;
     border-radius: 100%;
+    cursor: pointer;
 }
 #pic img{
     width: 100%;
