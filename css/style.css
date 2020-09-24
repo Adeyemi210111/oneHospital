@@ -391,26 +391,104 @@ footer{
 height: 286px;
 left: 0px;
 top: 3113px;
-
 background: #272373;
 }
 
-#logo{
-    height: 16px;
-width: 36px;
-border-radius: 0px;
-background-color: white;
-margin-top: 50px;
-
+#more img{
+    width: 40px;
+    height: 20px;
+    margin-left: 117px;
+    margin-top: 20px;
 }
 
-#logo img{
-    width: 100%;
-    height: 15px;
+
+#more h3{
+    width: 288px;
+height: 23px;
+margin-left: 117px;
+margin-top: 65px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 167.7%;
+/* or 23px */
+
+
+color: #FFFFFF;
+}
+
+#more ul{
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 11px;
+}
+#more li{
+    display: inline-block;
+    /* width: 200px; */
+height: 23px;
+text-align: center;
+margin-left: 15px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 167.7%;
+color: #FFFFFF;
+}
+
+#more li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#patient h3{
+    width: 288px;
+    height: 23px;
+    margin-left: 117px;
+    margin-top: 20px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 167.7%;
+    color: #FFFFFF;
+}
+
+#patient ul{
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 11px;
+}
+
+#patient li{
+    display: inline-block;
+    /* width: 200px; */
+height: 23px;
+text-align: center;
+margin-left: 15px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 167.7%;
+color: #FFFFFF;
+}
+
+#patient li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#social{
+    float: right;
     
 }
 
-#more li{
-    display: inline-block;
+#social img{
+    width: 38.4px;
+    height: 38.4px;
+    margin-right: 52.82px;
 }
-
