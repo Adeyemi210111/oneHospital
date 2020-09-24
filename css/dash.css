@@ -56,10 +56,14 @@
     width: 100%;
     height: 100%;
 }
-#leftbar p{
+#leftbar a{
     margin-top:2px ;
     margin-left: 15px;
+    text-decoration: none;
     color: rgb(179, 179, 179);
+}
+#leftbar a:hover{
+    color: black;
 }
 #main{
    width: 58%; 
@@ -188,6 +192,7 @@
     background-color: #f5f5fc;
     height: 585px;
 }
+
 #iconbar{
     width: 100%;
     height: 50px;
