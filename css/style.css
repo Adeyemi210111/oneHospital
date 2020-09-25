@@ -88,9 +88,16 @@
     border: 1px solid #6C63FF;
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: white;
+    
     outline: none;
     cursor: pointer;
+    background: rgba(105, 240, 174, 0.09);
+border-radius: 5px;
+}
+
+#create button a{
+    text-decoration: none;
+    color: #080712;
 }
 
 #left{
@@ -143,6 +150,11 @@ line-height: 23px;
 border: none;
 color: #FFFCFC;
 
+}
+
+#left button a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #right{
