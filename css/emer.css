@@ -56,10 +56,13 @@ input{
     width: 50%;
     height: 25px;
     display: flex;
+    cursor: pointer;
 }
 #clock{
     width: 20px;
     height: 22px;
+    margin-top: 4px;
+    cursor: pointer;
 }
 #clock img{
     width: 100%;
@@ -85,6 +88,7 @@ input{
 #icon{
     width: 10px;
     height: 10px;
+    cursor: pointer;
     margin-top: 5px;
 }
 #icon img{
@@ -111,6 +115,7 @@ input{
 #locatnicon{
     width: 20px;
     height: 25px;
+    cursor: pointer;
     margin-top: 2px;
 }
 #locatnicon img{
@@ -120,6 +125,7 @@ input{
 #icon2{
     width: 37px;
     height: 33px;
+    cursor: pointer;
     margin-left: 10px;
 }
 #icon2 img{
@@ -132,6 +138,7 @@ input{
     margin-top: 40px;
     margin-left: 75px;
     outline: none;
+    cursor: pointer;
     color: white;
     font-weight: 700;
     border: none;
