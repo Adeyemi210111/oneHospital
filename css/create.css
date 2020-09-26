@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    margin-top: 30px;
+    border: solid lightgrey;
+    box-shadow: #2C2526 5px;
+}
+
+#left{
+    float: left;
+    width: 35%;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 35px;
+    margin-left: 95px;
+}
+
+#logo img{
+    width: 100%;
+}
+#right{
+    width: 60%;
+height: 700px;
+float: right;
+
+background: rgba(108, 99, 255, 0.6);
+}
+
+#right img{
+    width: 100%;
+    height: 716px;
+}
+
+#formsection{
+    width: 100%;
+    padding: 20px;
+}
+
+#formsection h3{
+    width: 204px;
+height: 63px;
+margin-left: 75px;
+margin-top: 10px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 31px;
+/* or 130% */
+
+
+color: #161433;
+
+}
+
+form label{
+    height: 20px;
+left: 0%;
+right: 0%;
+top: 0px;
+display: block;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+margin-left: 75px;
+margin-top: 20px;
+/* 7 gray */
+
+color: #4A4C52;
+}
+
+form input{
+    top: 20px;
+bottom: 0px;
+width: 300px;
+height: 40px;
+border: 1px solid #2C2526;
+box-sizing: border-box;
+border-radius: 2px;
+margin-left: 75px;
+padding-left: 10px;
+outline: none;
+}
+
+#forgot{
+    display: block;
+    margin-left: 75px;
+margin-top: 20px;
+}
+
+form button{
+    display: block;
+    margin-left: 75px;
+margin-top: 20px;
+background: #63FFBA;
+box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.02em;
+width: 132px;
+height: 40px;
+outline: none;
+border: none;
+color: #080712;
+cursor: pointer;
+}
+
+#formsection span{
+    display: block;
+    margin-left: 75px;
+margin-top: 20px;
+width: 242px;
+height: 20px;
+
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+
+color: #2C2526;
+
+}
+
+#formsection span a{
+    text-decoration: none;
+}
+
+#copy{
+    display: block;
+    margin-top: 34px;
+    width: 224px;
+height: 20px;
+margin-left: 75px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 20px;
+/* identical to box height, or 182% */
+
+
+color: #8E8E8E;
+}
