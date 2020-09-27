@@ -1,121 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OneHospital - Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/utility.css" />
 
-<body>
-    <div id="maincontainer">
-        <div id="navbar">
-            <div id="logoimg">
-                <a href="index.html"> <img src="images/logo.png" alt=""></a>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="index.html"> Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="login.html">Log in</a></li>
-                </ul>
-            </div>
-            <div id="create">
-                <button><a href="create.html">Create a Free Account</a></button>
-            </div>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <div id="left">
-            <h1>Quality healthcare at <br> your fingertips</h1>
-            <p>Access quality healthcare services with prompt and quality <br> response with wide range of hospitals
-                covered, you will always be <br> attended to exquisitely.</p>
-            <button><a href="create.html">Create a Free Account</a></button>
-        </div>
-        <div id="right">
-            <div id="image">
-                <img src="images/rightimage.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div id="security">
-        <div id="img">
-            <img src="images/shield-security.svg" alt="">
-        </div>
-        <div id="text">
-            <h1>Your Security is our Priority</h1>
-            <p> One Hospital uses the highest levels of internet security, and it is secured by 256 bits SSL security
-                encryption to ensure that your information is completely protected from fraud.</p>
-        </div>
-    </div>
-    
-    <div id="services">
-        <h1>Our Services</h1>
-        <div class="ourservices">
-            <img src="images/48687.png" alt="">
-            <h4>Appointments</h4>
-            <p>Get connected and book an appointment with a highly qualified medical practitioner</p>
-        </div>
-        <div class="ourservices">
-            <img src="images/48687.png" alt="">
-            <h4>Medical History</h4>
-            <p>Keep track of your medical information for seamless health tracking and diagnosis</p>
-        </div>
-        <div class="ourservices">
-            <img src="images/48687.png" alt="">
-            <h4>Online Consultation</h4>
-            <p>Our health experts are available 24/7 to hear you out on any medical issue in less than a minute</p>
-        </div>
-        <div class="ourservices">
-            <img src="images/48687.png" alt="">
-            <h4>Emergency Area</h4>
-            <p>Report and get a quick health incidence response service including ambulance and medical attention</p>
-        </div>
-    </div>
-
-    <div id="sponsors">
-        <h1>Our Sponsors</h1>
-        <div class="sponsor">
-            <img src="images/federal ministry of health.png" alt="">
-        </div>
-        <div class="sponsor">
-            <img src="images/lagos state.png" alt="">
-        </div>
-        <div class="sponsor">
-            <img src="images/nigerian medical association.png" alt="">
-        </div> <br>
-        <div class="sponsor">
-            <img src="images/LASUTH.png" alt="">
-        </div>
-        <div class="sponsor">
-            <img src="images/LASEMA.png" alt="">
-        </div>
-        <div class="sponsor">
-            <img src="images/Lagos university teaching hospital.png" alt="">
-        </div> <br>
-        <div class="sponsor">
-            <img src="images/medical practitioners.png" alt="">
-        </div>
-
-        
-
-    </div>
-
-    <footer>
-        <div id="footerlogo">
-            <img src="images/logo.png" alt="">
-        </div>
+    <style>
+      * {
+        font-family: "DM Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       
-        <div id="social">
-            <a href="https://www.linkedin.com/"><img src="images/linkedin-with-circle (1) 1.png" /></a> 
-            <a href="https://www.facebook.com/"><img src="images/facebook-with-circle 1.png" />
-               <a href="https://www.youtube.com/"><img src="images/youtube-with-circle 1.png" />
-                   <a href="https://www.instagram.com/"> <img src="images/instagram-filled 1.png" />
-           </div>
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+
+      .hero {
+        height: 120vh;
+        /* padding: 0 4rem 0; */
+      }
+
+      .hero__image {
+        height: 500px;
+      }
+
+      .hero__cta {
+        background-color: #63FFBA;
+        padding: 20px 30px;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+
+      .nav {
+        height: 100px;
+        background: #ffffff;
+        /* padding: 0 4rem 0; */
+        position: fixed; width: 100%;
+        z-index: 1;
+      }
+
+      .nav__logo {
+        height: 32px;
+      }
+
+      .nav__link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      /* .nav__link {} */
+
+      .nav__cta-btn {
+        background-color: rgba(105, 240, 174, 0.09);
+        padding: 1rem 30px;
+        margin-left: .5rem;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+
+      .nav__cta-btn:hover, .nav__cta-btn:focus, .nav__cta-btn:active {
+        background-color: #63FFBA; 
+      }
+
+      .services {
+        padding: 5rem 0;
+      }
+
+      .services__heading {
+        margin-bottom: 5rem;
+      }
+
+      .services__box {
+        background: #F5F5FC;
+        width: 22%;
+        padding: 2rem 1rem;
+        border-radius: 10px;
+      }
+
+      .services__box-heading {
+        margin-bottom: 10px;
+        margin-top: 15px;
+      }
+
+      .services__box-text {
+        line-height: 32px;
+      }
+
+      .sponsors {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+      }
+
+      .sponsors__heading {
+        margin-bottom: 5rem;
+      }
+
+      .sponsors__images {
+        overflow-x: hidden;
+      }
+
+      .footer {
+        background: #272373;
+        height: 50vh;
+      }
+
+      .footer__social-link {
+        margin-right: 1em;
+      }
+
+      ::-webkit-scrollbar {
+        height: 1px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        width: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- navigation section -->
+    <nav class="nav">
+      <div class="container flex items-center justify-between">
+        
+        <a href="index.html" class="nav__logo">
+          <img src="./assets/images/logo.svg" alt="logo"
+        /></a>
+  
+        <div class="flex items-center">
+  
+          <div class="nav__links flex text-sm">
+            <a href="index.html" class="nav__link"> Home</a>
+            <a href="#" class="nav__link">Services</a>
+            <a href="#" class="nav__link">Contact</a></li>
+            <a href="about.html" class="nav__link">About Us</a>
+            <a href="login.html" class="nav__link">Log in</a>
+          </div>
+  
+          <a href="#" class="nav__cta-btn text-sm"> Create A Free Account </a>
+        </div>
+      </div>
+      
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container flex items-center justify-between">
+
+        <div class="hero__content flex flex--col">
+          <h1 class="text-3xl" style="margin-bottom: 20px;">
+            Quality healthcare at <br />
+            your fingertips
+          </h1>
+  
+          <p style="margin-bottom: 36px; line-height: 32px;">
+            Access quality healthcare services with prompt and quality <br />
+            response with wide range of hospitals covered, you will always be
+            <br />
+            attended to exquisitely.
+          </p>
+  
+          <a href="create.html" role="button" class="hero__cta" style="align-self: flex-start;">Create A Free Account</a>
+        </div>
+  
+        <div class="hero__image">
+          <img src="images/rightimage.png" alt="" style="height: 100%;" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- security info section -->
+    <section class="flex items-center justify-center" style="background: #F5F5FC; padding: 50px 0;">
+      <div style="margin-right: 80px;">
+        <img src="./assets/images/shield.svg" alt="shield" />
+      </div>
+
+      <div style="width: 47%;">
+        <h1 style="margin-bottom: 8px; font-size: 30px;">Your Security is our Priority</h1>
+
+        <p style="line-height: 28px;">
+          One Hospital uses the highest levels of internet security, and it is
+          secured by 256 bits SSL security encryption to ensure that your
+          information is completely protected from fraud.
+        </p>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services">
+      <div class="container">
+
+        <h1 class="services__heading text-2xl text-center">Our Services</h1>
+  
+        <div class="flex justify-between" style="width: 100%;">
+  
+          <div class="services__box text-center">
+            <img src="./assets/images/appointments.svg" alt="appointments" />
+            <h3 class="services__box-heading">Appointments</h3>
+            <p class="services__box-text">
+              Get connected and book an appointment with a highly qualified medical
+              practitioner
+            </p>
+          </div>
+    
+          <div class="services__box text-center">
+            <img src="./assets/images/history.svg" alt="history" />
+            <h3 class="services__box-heading">Medical History</h3>
+            <p class="services__box-text">
+              Keep track of your medical information for seamless health tracking
+              and diagnosis
+            </p>
+          </div>
+    
+          <div class="services__box text-center">
+            <img src="./assets/images/consultation.svg" alt="consultation" />
+            <h3 class="services__box-heading">Online Consultation</h3>
+            <p class="services__box-text">
+              Our health experts are available 24/7 to hear you out on any medical
+              issue in less than a minute
+            </p>
+          </div>
+    
+          <div class="services__box text-center">
+            <img src="./assets/images/emergency.svg" alt="emergency" />
+            <h3 class="services__box-heading">Emergency Area</h3>
+            <p class="services__box-text">
+              Report and get a quick health incidence response service including
+              ambulance and medical attention
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- partners section -->
+    <section class="sponsors">
+      <div class="container">
+        <h1 class="sponsors__heading text-center text-2xl">Partners & Sponsors</h1>
+        
+        <div class="sponsors__images flex">
+          <img src="images/federal ministry of health.png" alt="" style="height: 150px; filter: grayscale(100%);" />
+          <img src="images/lagos state.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+          <img src="images/nigerian medical association.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+          <img src="images/LASUTH.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+          <img src="images/LASEMA.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+          <img src="images/Lagos university teaching hospital.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+          <img src="images/medical practitioners.png" alt="" style="height: 150px; filter: grayscale(100%); margin-left: 10em;" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer flex flex--col items-center justify-center">
+      <div id="footerlogo">
+        <img src="./assets/images/footer-logo.svg" alt="footer-logo" />
+      </div>
+
+      <div class="footer__social" style="margin-top: 3em;">
+        <a href="https://www.linkedin.com/" class="footer__social-link">
+          <img src="./assets/images/linkedin.svg" />
+        </a>
+
+        <a href="https://www.facebook.com/" class="footer__social-link">
+          <img src="./assets/images/facebook.svg" />
+        </a>
+
+        <a href="https://www.youtube.com/" class="footer__social-link">
+          <img src="./assets/images/youtube.svg" />
+        </a>
+
+        <a href="https://www.instagram.com/"
+          ><img src="./assets/images/instagram.svg" />
+        </a>
+      </div>
+
+      <small class="" style="color: white; margin-top: 2.5em;">2020 All rights reserved One hospital</small>
     </footer>
-
-</body>
-
+  </body>
 </html>
